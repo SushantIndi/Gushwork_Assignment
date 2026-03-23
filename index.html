@@ -42,13 +42,15 @@
                 <div class="carousel">
 
                     <!-- LEFT ARROW -->
-                    <button class="arrow left">&#8592;</button>
+                    <button class="arrow left-arrow">&#8592;</button>
 
                     <!-- MAIN IMAGE -->
-                    <img id="mainImage" src="./images/main.jpeg" class="main-img" />
+                    <div class="zoom-container">
+                        <img id="mainImage" src="./images/main.jpeg" class="main-img" />
+                    </div>
 
                     <!-- RIGHT ARROW -->
-                    <button class="arrow right">&#8594;</button>
+                    <button class="arrow right-arrow">&#8594;</button>
 
                 </div>
 
@@ -469,7 +471,7 @@
     </section>
 
     <section class="process">
-    
+
         <div class="process-header">
             <h2>Advanced HDPE Pipe Manufacturing Process</h2>
             <p>
@@ -477,9 +479,9 @@
                 optimal material properties, and dimensional accuracy in every pipe we manufacture.
             </p>
         </div>
-    
+
         <div class="conatiner process-box">
-    
+
             <!-- 🔷 TABS -->
             <div class="process-tabs">
                 <button class="tab active" onclick="showTab(0)">Raw Material</button>
@@ -491,10 +493,10 @@
                 <button class="tab" onclick="showTab(6)">Cutting</button>
                 <button class="tab" onclick="showTab(7)">Packaging</button>
             </div>
-    
+
             <!-- 🔷 CONTENT -->
             <div class="process-content">
-    
+
                 <!-- LEFT TEXT -->
                 <div class="process-text" id="processText">
                     <h3>High-Grade Raw Material Selection</h3>
@@ -502,28 +504,28 @@
                         Vacuum sizing tanks ensure precise outer diameter while internal
                         pressure maintains perfect roundness and wall thickness uniformity.
                     </p>
-    
+
                     <ul>
                         <li>PE100 grade material</li>
                         <li>Optimal molecular weight distribution</li>
                     </ul>
                 </div>
-    
+
                 <!-- RIGHT IMAGE -->
                 <div class="process-image">
                     <button class="arrow left" onclick="prevImage()">←</button>
                     <img id="processImage" src="./images/main.jpeg" />
                     <button class="arrow right" onclick="nextImage()">→</button>
                 </div>
-    
+
             </div>
-    
+
         </div>
-    
+
     </section>
 
     <section class="testimonials">
-    
+
         <!-- HEADER -->
         <div class="container test-header">
             <h2>Trusted Performance. Proven Results</h2>
@@ -532,11 +534,11 @@
                 we deliver complete solutions for modern textile manufacturing.
             </p>
         </div>
-    
+
         <!-- SLIDER -->
         <div class="test-viewport">
             <div class="test-track" id="testTrack">
-    
+
                 <!-- CARD -->
                 <div class="test-card">
                     <div class="quote">“</div>
@@ -545,7 +547,7 @@
                         Since integrating Meera’s TFO machines, our output has increased
                         without compromising yarn quality. The consistency is unmatched.
                     </p>
-                
+
                     <div class="user">
                         <div class="avatar"></div>
                         <div>
@@ -554,7 +556,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Duplicate -->
                 <div class="test-card">
                     <div class="quote">“</div>
@@ -563,7 +565,7 @@
                         The durability and performance of Meera's fishnet processing equipment
                         has significantly improved our marine product quality.
                     </p>
-                
+
                     <div class="user">
                         <div class="avatar"></div>
                         <div>
@@ -579,7 +581,7 @@
                         The durability and performance of Meera's fishnet processing equipment
                         has significantly improved our marine product quality.
                     </p>
-                
+
                     <div class="user">
                         <div class="avatar"></div>
                         <div>
@@ -595,7 +597,7 @@
                         These machines run continuously with minimal downtime.
                         Maintenance is simple, and performance remains stable even at scale.
                     </p>
-                
+
                     <div class="user">
                         <div class="avatar"></div>
                         <div>
@@ -611,7 +613,7 @@
                         We required precision for technical textiles, and Meera delivered
                         exactly what we needed with consistent results across batches.
                     </p>
-                
+
                     <div class="user">
                         <div class="avatar"></div>
                         <div>
@@ -627,7 +629,7 @@
                         The onboarding process was smooth, and their support team ensured
                         our systems were fully optimized from day one.
                     </p>
-                
+
                     <div class="user">
                         <div class="avatar"></div>
                         <div>
@@ -643,7 +645,7 @@
                         The uniformity and strength of yarn produced have noticeably improved,
                         helping us meet stricter quality standards in global markets.
                     </p>
-                
+
                     <div class="user">
                         <div class="avatar"></div>
                         <div>
@@ -659,7 +661,7 @@
                         The durability and performance of Meera's fishnet processing equipment
                         has significantly improved our marine product quality.
                     </p>
-                
+
                     <div class="user">
                         <div class="avatar"></div>
                         <div>
@@ -670,11 +672,11 @@
                 </div>
             </div>
         </div>
-    
+
     </section>
 
     <section class="portfolio">
-    
+
         <!-- HEADER -->
         <div class="container portfolio-header">
             <h2>Complete Piping Solutions Portfolio</h2>
@@ -683,10 +685,10 @@
                 we deliver complete solutions for modern textile manufacturing.
             </p>
         </div>
-    
+
         <!-- CARDS -->
         <div class="portfolio-cards">
-    
+
             <!-- CARD 1 -->
             <div class="portfolio-card">
                 <h3>HDPE Fittings & Accessories</h3>
@@ -694,12 +696,12 @@
                     Complete range of electrofusion and butt fusion fittings,
                     including elbows, tees, reducers, and couplers.
                 </p>
-    
+
                 <img src="./images/worker1.jpg" alt="HDPE fittings" />
-    
+
                 <button class="learn-btn">Learn More</button>
             </div>
-    
+
             <!-- CARD 2 -->
             <div class="portfolio-card">
                 <h3>Professional Installation Services</h3>
@@ -707,12 +709,12 @@
                     Expert installation and fusion welding services ensuring
                     optimal system performance and long-term reliability.
                 </p>
-    
+
                 <img src="./images/worker2.jpg" alt="Installation" />
-    
+
                 <button class="learn-btn">Learn More</button>
             </div>
-    
+
             <!-- CARD 3 -->
             <div class="portfolio-card">
                 <h3>PE-RT Heating Pipes</h3>
@@ -720,28 +722,28 @@
                     Polyethylene of Raised Temperature resistance pipes ideal
                     for underfloor heating and hot water applications.
                 </p>
-    
+
                 <img src="./images/worker1.jpg" alt="Heating pipes" />
-    
+
                 <button class="learn-btn">Learn More</button>
             </div>
-    
+
         </div>
-    
+
         <!-- BOTTOM CTA -->
         <div class="portfolio-cta">
             <div>
                 <h4>Didn’t find what <span>you’re looking for?</span></h4>
                 <p>Talk to our experts for custom solutions and tailored guidance.</p>
             </div>
-    
+
             <button class="expert-btn">📞 Talk to an Expert</button>
         </div>
-    
+
     </section>
 
     <section class="resources">
-    
+
         <!-- HEADER -->
         <div class="container resources-header">
             <h2>Resources & Downloads</h2>
@@ -750,92 +752,92 @@
                 about our HDPE piping solutions.
             </p>
         </div>
-    
+
         <!-- DOWNLOAD BOX -->
         <div class="resources-box">
-    
+
             <!-- ITEM -->
             <div class="resource-item">
                 <span>HDPE Pipe Installation Manual (PDF)</span>
                 <a href="#" class="download-link">Download PDF ⬇</a>
             </div>
-    
+
             <div class="resource-item">
                 <span>Maintenance & Inspection Handbook (PDF)</span>
                 <a href="#" class="download-link">Download PDF ⬇</a>
             </div>
-    
+
             <div class="resource-item">
                 <span>Engineering Specifications Sheet (PDF)</span>
                 <a href="#" class="download-link">Download PDF ⬇</a>
             </div>
-    
+
         </div>
-    
+
     </section>
 
     <section class="cta-section">
-    
+
         <div class="container cta-container">
-    
+
             <!-- LEFT CONTENT -->
             <div class="cta-left">
                 <h2>Ready to Transform Your Textile Manufacturing?</h2>
-    
+
                 <p class="cta-sub">
                     Get a personalized consultation and quote for machinery solutions tailored
                     to your specific production requirements.
                 </p>
-    
+
                 <hr>
-    
+
                 <p class="cta-contact">
                     For immediate assistance, feel free to give us a direct call at
                     <strong>+91-XXX-XXX-XXXX</strong>. You can also send us a quick email at
                     <strong>info@meeraind.com</strong>
                 </p>
             </div>
-    
+
             <!-- RIGHT FORM -->
             <div class="cta-form">
                 <h4>Contact Us Today</h4>
-    
+
                 <input type="text" placeholder="Full Name" />
                 <input type="text" placeholder="Company Name" />
                 <input type="email" placeholder="Email Address" />
-    
+
                 <div class="phone-field">
                     <span>+91</span>
                     <input type="text" placeholder="7003026616" />
                 </div>
-    
+
                 <button class="cta-btn">Request Custom Quote</button>
             </div>
-    
+
         </div>
-    
+
     </section>
 
     <footer class="footer">
-    
+
         <!-- TOP BOX -->
         <div class="footer-top">
             <img src="./images/head-logo.png" alt="Logo" />
-    
+
             <p>
                 Premium <span>HDPE Pipes & Fittings Manufacturer</span> in South India
             </p>
         </div>
-    
+
         <!-- MAIN GRID -->
         <div class="container footer-container">
-    
+
             <!-- ABOUT -->
             <div class="footer-col">
                 <h4>About Us</h4>
                 <p>About Us</p>
             </div>
-    
+
             <!-- CATEGORIES -->
             <div class="footer-col">
                 <h4>Categories</h4>
@@ -846,7 +848,7 @@
                 <p>Carpet and Rugs Industry</p>
                 <p>Technical Textiles</p>
             </div>
-    
+
             <!-- PRODUCTS -->
             <div class="footer-col">
                 <h4>Products</h4>
@@ -857,36 +859,36 @@
                 <p>Heat Setting Equipment</p>
                 <p>Servo Controlled Winders</p>
             </div>
-    
+
             <!-- CONTACT -->
             <div class="footer-col">
                 <h4>Contact</h4>
-    
+
                 <p>📍 2126, Road No. 2, GIDC Sachin, Surat - 394 230 Gujarat, India</p>
                 <p>📞 +91-XXX-XXX-XXXX</p>
                 <p>✉ info@meeraind.com</p>
                 <p>✉ support@meeraind.com</p>
-    
+
                 <div class="socials">
                     <span>🔗</span>
                     <span>❌</span>
                     <span>📸</span>
                 </div>
             </div>
-    
+
         </div>
-    
+
         <!-- BOTTOM BAR -->
         <div class="footer-bottom">
             <p>Copyright © 2025 Meera Industries Limited | All Rights Reserved</p>
-    
+
             <div class="footer-links">
                 <span>Privacy Policy</span>
                 <span>Terms of Service</span>
                 <span>Sitemap</span>
             </div>
         </div>
-    
+
     </footer>
     <script src="script.js"></script>
 </body>

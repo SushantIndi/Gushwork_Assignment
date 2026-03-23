@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
 
 // CAROUSEL 
 const images = [
-    "./images/main.png",
+    "./images/main.jpeg",
     "./images/thumb1.png",
     "./images/thumb1.png",
     "./images/thumb1.png",
@@ -50,16 +50,35 @@ thumbs.forEach((thumb, index) => {
 });
 
 // 👉 ARROWS
-document.querySelector(".left").addEventListener("click", () => {
+document.querySelector(".left-arrow").addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     updateImage(currentIndex);
 });
 
-document.querySelector(".right").addEventListener("click", () => {
+document.querySelector(".right-arrow").addEventListener("click", () => {
     currentIndex = (currentIndex + 1) % images.length;
     updateImage(currentIndex);
 });
 
+const zoomContainer = document.querySelector(".zoom-container");
+const zoomImage = document.getElementById("mainImage");
+
+zoomContainer.addEventListener("mousemove", (e) => {
+    const rect = zoomContainer.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const xPercent = (x / rect.width) * 100;
+    const yPercent = (y / rect.height) * 100;
+
+    zoomImage.style.transformOrigin = `${xPercent}% ${yPercent}%`;
+    zoomImage.style.transform = "scale(2)";
+});
+
+zoomContainer.addEventListener("mouseleave", () => {
+    zoomImage.style.transform = "scale(1)";
+});
 
 // FAQ SECTION
 const faqs = document.querySelectorAll(".faq-item");
