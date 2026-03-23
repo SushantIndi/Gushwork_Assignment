@@ -1012,18 +1012,19 @@ img {
 /* TABS */
 .process-tabs {
   display: flex;
+  justify-content: space-evenly;
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 25px;
 }
 
 .tab {
-  padding: 8px 16px;
+  padding: 15px 20px;
   border-radius: 20px;
   border: 1px solid #e5e7eb;
   background: #f3f4f6;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .tab.active {
@@ -1043,16 +1044,19 @@ img {
 /* LEFT */
 .process-text {
   flex: 1;
+  width: 100px;
+  position: relative;
+  left: 50px;
 }
 
 .process-text h3 {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
 .process-text p {
   color: #6b7280;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 15px;
 }
 
